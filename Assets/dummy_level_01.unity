@@ -242,8 +242,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.03445964, y: -1.6298988}
-  m_Size: {x: 1.7000005, y: 0.19999984}
+  m_Offset: {x: 0.03445965, y: -1.5306904}
+  m_Size: {x: 1.7000008, y: 0.39841658}
   m_Direction: 1
 --- !u!61 &15675829
 BoxCollider2D:
@@ -277,7 +277,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.035717964, y: -1.1810569}
+  m_Offset: {x: 0.035717964, y: -1.127637}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -288,7 +288,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7, y: 0.9004747}
+  m_Size: {x: 1.7, y: 0.79363495}
   m_EdgeRadius: 0
 --- !u!50 &15675830
 Rigidbody2D:
@@ -554,9 +554,9 @@ GameObject:
   - component: {fileID: 561596022}
   - component: {fileID: 561596021}
   - component: {fileID: 561596020}
+  - component: {fileID: 561596017}
   - component: {fileID: 561596019}
   - component: {fileID: 561596018}
-  - component: {fileID: 561596017}
   - component: {fileID: 561596023}
   m_Layer: 0
   m_Name: player2
@@ -612,8 +612,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.039706506, y: -1.7422342}
-  m_Size: {x: 1.7, y: 0.2}
+  m_Offset: {x: 0.03970652, y: -1.6125004}
+  m_Size: {x: 1.7000003, y: 0.45946795}
   m_Direction: 1
 --- !u!114 &561596018
 MonoBehaviour:
@@ -675,7 +675,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.040097237, y: -1.0655481}
+  m_Offset: {x: 0.040097237, y: -1.0044968}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -686,7 +686,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7, y: 1.3579028}
+  m_Size: {x: 1.7, y: 1.2358003}
   m_EdgeRadius: 0
 --- !u!50 &561596021
 Rigidbody2D:
@@ -926,10 +926,10 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6845374512839061151, guid: f3cbb9debf9aec74697463f1904fd4c3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 561596016}
+      addedObject: {fileID: 15675824}
     - targetCorrespondingSourceObject: {fileID: 6845374512839061151, guid: f3cbb9debf9aec74697463f1904fd4c3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 15675824}
+      addedObject: {fileID: 561596016}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3cbb9debf9aec74697463f1904fd4c3, type: 3}
 --- !u!1 &793833187
