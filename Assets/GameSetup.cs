@@ -7,10 +7,10 @@ public class GameSetup : MonoBehaviour
 
     void Start()
     {
-        // menambahkan input kontrol player1 (W,A,D)
+        // Assign controls for Player 1 (W, A, D)
         player1.SetControls("Horizontal1", "Jump1");
 
-        // menambahkan input kontrol Player2 (Arrow Keys)
+        // Assign controls for Player 2 (Arrow Keys)
         player2.SetControls("Horizontal2", "Jump2");
     }
 }
