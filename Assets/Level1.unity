@@ -8706,6 +8706,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: fixed_characters
       objectReference: {fileID: 0}
+    - target: {fileID: 800024036519902272, guid: a178bf5d0fbcefd449c74dd51b37f715, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348542955671583161, guid: a178bf5d0fbcefd449c74dd51b37f715, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2815330517423409490, guid: a178bf5d0fbcefd449c74dd51b37f715, type: 3}
       propertyPath: m_Size.x
       value: 1.6712635
