@@ -2,14 +2,19 @@ using UnityEngine;
 
 public class Key : MonoBehaviour
 {
-    public GameManager gameManager;
+    private GameManager gameManager;
+
+    private void Start()
+    {
+        gameManager = FindObjectOfType<GameManager>();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player1") || other.CompareTag("Player2"))
         {
-            gameManager.KeyCollected(); // Memanggil method di GameManager
-            Destroy(gameObject); // kunci ilang setelah diambil
+            gameManager.CollectKey();
+            Destroy(gameObject);
         }
     }
 }
