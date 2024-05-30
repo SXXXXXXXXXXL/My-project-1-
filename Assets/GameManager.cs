@@ -2,46 +2,28 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public int totalCoins; // Total number of coins in the level
-    private int collectedCoins = 0; // Number of coins collected so far
-    private bool keyCollected = false; // Whether the key has been collected
+    public int totalCoins; // Input total koin pada scene
+    public GameObject key;
 
-    public GameObject key; // Reference to the key GameObject
+    private int coinsCollected = 0; // Jumlah koin yang dikumpul
 
-    private void Start()
+    void Start()
     {
-        if (key != null)
-        {
-            key.SetActive(false); // Ensure the key is inactive at the start
-        }
-        else
-        {
-            Debug.LogError("Key GameObject reference not set in GameManager.");
-        }
+        key.SetActive(false); // Utk menyembunyikan kunci sebelum koin terkumpul
     }
 
-    public void CollectCoin()
+    public void CoinCollected()
     {
-        collectedCoins++;
-        CheckWinCondition();
-    }
+        coinsCollected++; // Increment setiap koin diambil
 
-    public void CollectKey()
-    {
-        keyCollected = true;
-        CheckWinCondition();
-    }
-
-    private void CheckWinCondition()
-    {
-        if (collectedCoins >= totalCoins && key != null)
+        if (coinsCollected == totalCoins) // Kondisi jika setiap koin terkumpul
         {
-            key.SetActive(true); // Activate the key when all coins are collected
+            // Spawn kunci
+            key.SetActive(true);
         }
     }
-
-    public bool Wins()
+    public void KeyCollected()
     {
-        return collectedCoins >= totalCoins && keyCollected;
+        Debug.Log("Key collected!");
     }
 }
