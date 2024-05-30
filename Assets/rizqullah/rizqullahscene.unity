@@ -137,8 +137,8 @@ GameObject:
   - component: {fileID: 15675829}
   - component: {fileID: 15675828}
   - component: {fileID: 15675827}
-  - component: {fileID: 15675826}
   - component: {fileID: 15675825}
+  - component: {fileID: 15675832}
   m_Layer: 0
   m_Name: player1
   m_TagString: Player
@@ -182,20 +182,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &15675826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 15675823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2c5347e28190a64280f1b881097a698, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player1: {fileID: 15675827}
-  player2: {fileID: 561596018}
 --- !u!114 &15675827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,6 +355,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &15675832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15675823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b259ff4ca36d85d488d12a1f1538aa13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1: {fileID: 15675827}
+  player2: {fileID: 561596018}
 --- !u!1 &20024413
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,9 +689,9 @@ GameObject:
   - component: {fileID: 561596021}
   - component: {fileID: 561596020}
   - component: {fileID: 561596017}
-  - component: {fileID: 561596019}
   - component: {fileID: 561596018}
   - component: {fileID: 561596023}
+  - component: {fileID: 561596024}
   m_Layer: 0
   m_Name: player2
   m_TagString: Player
@@ -763,20 +763,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   jumpForce: 7
---- !u!114 &561596019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561596015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2c5347e28190a64280f1b881097a698, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player1: {fileID: 15675827}
-  player2: {fileID: 561596018}
 --- !u!61 &561596020
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -922,6 +908,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &561596024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561596015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b259ff4ca36d85d488d12a1f1538aa13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1: {fileID: 15675827}
+  player2: {fileID: 561596018}
 --- !u!1 &570994336
 GameObject:
   m_ObjectHideFlags: 0
