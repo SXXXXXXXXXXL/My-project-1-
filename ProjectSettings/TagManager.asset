@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Key
+  - Player1
+  - Player2
   layers:
   - Default
   - TransparentFX
@@ -41,4 +43,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: player
+    uniqueID: 1281211069
+    locked: 0
+  - name: door
+    uniqueID: 1901913337
     locked: 0
