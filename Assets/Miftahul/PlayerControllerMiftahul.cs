@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using System;
 
-public class PlayerController1 : MonoBehaviour
+public class PlayerControllerMiftahul : MonoBehaviour
 {
     public float speed = 5f;
     public float jumpForce = 7f;

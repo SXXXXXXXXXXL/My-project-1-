@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class GameSetup : MonoBehaviour
+public class GameSetupMiftahul : MonoBehaviour
 {
-    public PlayerController player1;
-    public PlayerController player2;
+    public PlayerControllerMiftahul player1;
+    public PlayerControllerMiftahul player2;
 
     void Start()
     {
