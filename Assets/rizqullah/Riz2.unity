@@ -832,9 +832,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 714732c7b2d51bb4caa3ed5b35ff753d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
-  player1finish: 0
-  player2finish: 0
 --- !u!61 &286246406
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1598,7 +1595,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3ee3549134854d43b45e392556ae87a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
 --- !u!212 &542389932
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2974,7 +2970,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 978245ed64798ff458536f85a569f11a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
 --- !u!58 &1214289932
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3539,7 +3534,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 978245ed64798ff458536f85a569f11a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
 --- !u!58 &1406565866
 CircleCollider2D:
   m_ObjectHideFlags: 0

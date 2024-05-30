@@ -194,8 +194,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c5347e28190a64280f1b881097a698, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1: {fileID: 15675827}
-  player2: {fileID: 561596018}
+  player1: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!114 &15675827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -775,8 +775,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c5347e28190a64280f1b881097a698, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1: {fileID: 15675827}
-  player2: {fileID: 561596018}
+  player1: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!61 &561596020
 BoxCollider2D:
   m_ObjectHideFlags: 0
