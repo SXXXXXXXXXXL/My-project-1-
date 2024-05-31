@@ -3483,6 +3483,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 367c513b0e70d5a4c8660981e9e1c88b, type: 3}
+    - target: {fileID: 989386232111644080, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1125704681876901651, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3506,6 +3510,38 @@ PrefabInstance:
     - target: {fileID: 2521691185017346759, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
       propertyPath: m_LocalPosition.y
       value: -3.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884180853859167232, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884180853859167232, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884180853859167232, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884180853859167232, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
+      value: -1.1877925
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884180853859167232, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
+      value: -1.1484034
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884180853859167232, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
+      value: 1.2451098
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884180853859167232, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
+      value: -1.0910788
+      objectReference: {fileID: 0}
+    - target: {fileID: 3237074519864978221, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
+      propertyPath: totalCoins
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4148179814281182650, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
       propertyPath: m_LocalScale.x
@@ -3547,14 +3583,38 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 21.8
       objectReference: {fileID: 0}
+    - target: {fileID: 5898348976214518752, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
+      propertyPath: m_Radius
+      value: 3.5223749
+      objectReference: {fileID: 0}
+    - target: {fileID: 5898348976214518752, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.066000424
+      objectReference: {fileID: 0}
     - target: {fileID: 6270115866086638098, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: bd0b0dedff8c7634e94425fb122fabdf, type: 3}
+    - target: {fileID: 6270115866086638098, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490240777390491647, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
+      propertyPath: m_Radius
+      value: 3.4981027
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490240777390491647, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.07809288
+      objectReference: {fileID: 0}
     - target: {fileID: 7301069444722736412, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: bd0b0dedff8c7634e94425fb122fabdf, type: 3}
+    - target: {fileID: 7301069444722736412, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8354360273044812502, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.18609715
@@ -3575,10 +3635,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -3.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8423451553554988340, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
+      propertyPath: m_Radius
+      value: 3.5002773
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423451553554988340, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.104981326
+      objectReference: {fileID: 0}
     - target: {fileID: 8534871776392157239, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: bd0b0dedff8c7634e94425fb122fabdf, type: 3}
+    - target: {fileID: 8534871776392157239, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8678281048228418780, guid: b4abea2eb81393b46bc91be373f6d212, type: 3}
       propertyPath: m_Name
       value: CoinsMechanism
@@ -3806,7 +3878,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 8
+  m_SortingOrder: 10
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.0001476407, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -4259,9 +4331,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.07739691, y: -0.2049631}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 3.7119715
 --- !u!114 &312372234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4314,7 +4386,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: bd0b0dedff8c7634e94425fb122fabdf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4392,9 +4464,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.038698453, y: -0.12297271}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 3.7506547
 --- !u!114 &421471078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4447,7 +4519,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: bd0b0dedff8c7634e94425fb122fabdf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4590,7 +4662,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: 99c06a254e0b16b45a6bdc0aed04063b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4683,9 +4755,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.09165956}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 3.52858
 --- !u!114 &515331293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4738,7 +4810,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: bd0b0dedff8c7634e94425fb122fabdf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4908,9 +4980,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.08199944, y: -0.04343183}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 3.6022122
 --- !u!114 &533515744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4963,7 +5035,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: bd0b0dedff8c7634e94425fb122fabdf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5239,7 +5311,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: f4424e9478d28424cb39667504a41490, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -73997,9 +74069,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.12317436, y: -0.074545145}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 3.6144664
 --- !u!114 &1020953066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74052,7 +74124,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: bd0b0dedff8c7634e94425fb122fabdf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -83098,7 +83170,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: bc81bdb39376c334cbc93c6148145833, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -83430,13 +83502,21 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2987962197727429467, guid: b6d7b5a59ce1ff3449f662f97fcb32c9, type: 3}
+      propertyPath: m_TagString
+      value: Player2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090583578640414203, guid: b6d7b5a59ce1ff3449f662f97fcb32c9, type: 3}
+      propertyPath: m_TagString
+      value: Player1
+      objectReference: {fileID: 0}
     - target: {fileID: 3403934936175089844, guid: b6d7b5a59ce1ff3449f662f97fcb32c9, type: 3}
       propertyPath: m_SortingOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6529937114983906352, guid: b6d7b5a59ce1ff3449f662f97fcb32c9, type: 3}
       propertyPath: m_SortingOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7359218963045903643, guid: b6d7b5a59ce1ff3449f662f97fcb32c9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -83988,9 +84068,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.095240206}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 3.4896553
 --- !u!114 &1980382037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84043,7 +84123,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: bd0b0dedff8c7634e94425fb122fabdf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -84205,9 +84285,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.061579313}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 3.516247
 --- !u!114 &2141774207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84260,7 +84340,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: bd0b0dedff8c7634e94425fb122fabdf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
