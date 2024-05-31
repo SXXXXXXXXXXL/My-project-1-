@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 44fb3d47946e6fb4b9f8971d120ca0dd
   - enabled: 1
-    path: Assets/Level1.unity
-    guid: a41fcd53320d24c4187e334f137de491
+    path: Assets/Miftahul/Level1Miftahul.unity
+    guid: 596efad638bf28f46b4e5a55c1996816
+  - enabled: 1
+    path: Assets/Miftahul/Level2Miftahul.unity
+    guid: d72d0a598fa5c974d966268c5f319c7b
+  - enabled: 1
+    path: Assets/Miftahul/Level3Miftahul.unity
+    guid: 87ede99313a0ce64889a3bd535f9f429
   m_configObjects: {}
