@@ -3,13 +3,19 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public int totalCoins;
-    private int collectedCoins = 0;
+    private int collectedCoins;
     private bool keyCollected = false;
 
     public GameObject key;
 
+    private void Awake()
+    {
+        collectedCoins = 0;
+    }
+
     private void Start()
     {
+        
         if (key != null)
         {
             key.SetActive(false);
