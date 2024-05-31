@@ -8,14 +8,13 @@ public class BridgeBehaviour : MonoBehaviour
     Vector3 _platformOffPos;
     Vector3 _platformOnPos;
     float _platformSpeed = 10f;
-    float _platformSizeX;
+    public float platformMovement = 0f;
 
     // Start is called before the first frame update
     void Awake()
     {
-        _platformSizeX = transform.localScale.x;
         _platformOffPos = transform.position;
-        _platformOnPos = new Vector3(transform.position.x - _platformSizeX,
+        _platformOnPos = new Vector3(transform.position.x - platformMovement,
             transform.position.y,
             transform.position.z);
     }
