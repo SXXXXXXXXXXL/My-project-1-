@@ -26,8 +26,13 @@ public class PlayerControllerMiftahul : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxisRaw(horizontalControl); // Mendapat inputan utk movement
+        Vector2 velocity = rb.velocity;
+        velocity.x = horizontal * speed; // Set speed utk movement
+        rb.velocity = velocity;
 
         FlipSprite();
+
+        groundCheck();
 
         if (isGrounded && Input.GetButtonDown(jumpControl)) // Program utk lompat
         {
@@ -63,10 +68,11 @@ public class PlayerControllerMiftahul : MonoBehaviour
         jumpControl = jump;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void groundCheck()
     {
-        isGrounded = true;
+        RaycastHit2D[] hits = new RaycastHit2D[5];
+        int numhits = rb.Cast(Vector2.down, hits, 0.1f);
+        isGrounded = numhits > 0;
         animator.SetBool("isJumping", !isGrounded);
-
     }
 }

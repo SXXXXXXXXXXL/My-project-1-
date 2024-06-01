@@ -21,7 +21,7 @@ public class SwitchBehaviour : MonoBehaviour
         _switchSizeY = transform.localScale.y;
         _switchUpPos = transform.position;
         _switchDownPos = new Vector3(transform.position.x,
-            transform.position.y - _switchSizeY,
+            transform.position.y - (_switchSizeY/2),
             transform.position.z);
     }
 
