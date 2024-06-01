@@ -33,7 +33,7 @@ public class BridgeSwitch : MonoBehaviour
         {
             SwitchDown();
         }
-        else if (!_isSwitchPressed)
+        else
         {
             SwitchUp();
         }
