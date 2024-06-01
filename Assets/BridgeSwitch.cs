@@ -14,14 +14,16 @@ public class BridgeSwitch : MonoBehaviour
     float _switchSpeed = 1f;
     float _switchDelay = 0.2f;
     bool _isSwitchPressed = false;
+    public float pembagian = 1;
 
     // Start is called before the first frame update
     void Awake()
     {
+
         _switchSizeY = transform.localScale.y;
         _switchUpPos = transform.position;
         _switchDownPos = new Vector3(transform.position.x,
-            transform.position.y - _switchSizeY,
+            transform.position.y - (_switchSizeY/pembagian),
             transform.position.z);
     }
 
