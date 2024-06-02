@@ -51423,6 +51423,7 @@ MonoBehaviour:
   finish: {fileID: 8300000, guid: 730d10518a21ed449810bb1313720964, type: 3}
   walk: {fileID: 8300000, guid: a6e0674cba799cf4cb9641454148416d, type: 3}
   win: {fileID: 8300000, guid: cd3af27df2036ef418c77c3878954e07, type: 3}
+  lompat: {fileID: 8300000, guid: dd3eb158e0442804880df9ad94dc73b8, type: 3}
 --- !u!1001 &435899192
 PrefabInstance:
   m_ObjectHideFlags: 0

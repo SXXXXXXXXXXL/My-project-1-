@@ -19,6 +19,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip finish;
     public AudioClip walk;
     public AudioClip win;
+    public AudioClip lompat;
 
     private void Start()
     {
