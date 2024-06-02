@@ -16,6 +16,7 @@ public class PlayerControllerMiftahul : MonoBehaviour
     private string jumpControl = "Jump"; // Default input loncat
     bool isFacingRight = false;
     Animator animator;
+    public AudioSource walkSound;
 
     void Start()
     {
@@ -33,6 +34,15 @@ public class PlayerControllerMiftahul : MonoBehaviour
         FlipSprite();
 
         groundCheck();
+
+        if (Math.Abs(Input.GetAxisRaw(horizontalControl)) > 0 && isGrounded)
+        {
+            walkSound.enabled = true;
+        }
+        else
+        {
+            walkSound.enabled = false;
+        }
 
         if (isGrounded && Input.GetButtonDown(jumpControl)) // Program utk lompat
         {
