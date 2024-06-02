@@ -3,7 +3,12 @@ using UnityEngine;
 public class Coin : MonoBehaviour
 {
     private GameManager gameManager;
+    AudioManager audioManager;
 
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     private void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
@@ -19,6 +24,7 @@ public class Coin : MonoBehaviour
         {
             if (gameManager != null)
             {
+                audioManager.PlaySFX(audioManager.koin);
                 gameManager.CollectCoin();
                 Destroy(gameObject);
             }

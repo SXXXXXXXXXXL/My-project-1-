@@ -8,6 +8,8 @@ public class BridgeSwitch : MonoBehaviour
     [SerializeField] bool _isPlatformOnSwitch;
     [SerializeField] bool _isPlatformOffSwitch;
 
+    AudioManager audioManager;
+
     float _switchSizeY;
     Vector3 _switchUpPos;
     Vector3 _switchDownPos;
@@ -15,6 +17,7 @@ public class BridgeSwitch : MonoBehaviour
     float _switchDelay = 0.2f;
     bool _isSwitchPressed = false;
     public float pembagian = 1;
+    bool audioplayed = false;
 
     // Start is called before the first frame update
     void Awake()
@@ -25,6 +28,7 @@ public class BridgeSwitch : MonoBehaviour
         _switchDownPos = new Vector3(transform.position.x,
             transform.position.y - (_switchSizeY/pembagian),
             transform.position.z);
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -33,6 +37,11 @@ public class BridgeSwitch : MonoBehaviour
 
         if (_isSwitchPressed)
         {
+            if(!audioplayed)
+            {
+                audioManager.PlaySFX(audioManager.button);
+                audioplayed = true;
+            }
             SwitchDown();
         }
         else
@@ -81,7 +90,7 @@ public class BridgeSwitch : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player1") || collision.CompareTag("Player2"))
         {
             StartCoroutine(SwitchUpDelay(_switchDelay));
         }
@@ -91,5 +100,6 @@ public class BridgeSwitch : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
         _isSwitchPressed = false;
+        audioplayed = false;
     }
 }
