@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
-    guid: 44fb3d47946e6fb4b9f8971d120ca0dd
+    guid: 2c3e790de4aab804cb62a754f5aed2de
   - enabled: 1
     path: Assets/Miftahul/Level1Miftahul.unity
     guid: 596efad638bf28f46b4e5a55c1996816
