@@ -9,6 +9,7 @@ public class BridgeBehaviour : MonoBehaviour
     Vector3 _platformOnPos;
     float _platformSpeed = 10f;
     public float platformMovement = 0f;
+    public AudioSource movingPlatform;
 
     // Start is called before the first frame update
     void Awake()
@@ -17,6 +18,7 @@ public class BridgeBehaviour : MonoBehaviour
         _platformOnPos = new Vector3(transform.position.x - platformMovement,
             transform.position.y,
             transform.position.z);
+        movingPlatform.enabled = false;
     }
 
     // Update is called once per frame
@@ -26,7 +28,7 @@ public class BridgeBehaviour : MonoBehaviour
         {
             platformOn();
         }
-        else if (!_isOn)
+        else
         {
             platformOff();
         }
@@ -39,6 +41,11 @@ public class BridgeBehaviour : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position,
                 _platformOnPos,
                 _platformSpeed * Time.deltaTime);
+            movingPlatform.enabled = true;
+        }
+        else
+        {
+            movingPlatform.enabled = false;
         }
     }
 
@@ -49,6 +56,7 @@ public class BridgeBehaviour : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position,
                 _platformOffPos,
                 _platformSpeed * Time.deltaTime);
+            movingPlatform.enabled = true;
         }
     }
 

@@ -15,6 +15,8 @@ public class KustomVerticalSwitch : MonoBehaviour
     float _switchSpeed = 1f;
     float _switchDelay = 0.2f;
     bool _isSwitchPressed = false;
+    AudioManager audioManager;
+    bool soundplayed = false;
 
     // Start is called before the first frame update
     void Awake()
@@ -24,6 +26,7 @@ public class KustomVerticalSwitch : MonoBehaviour
         _switchDownPos = new Vector3(transform.position.x,
             transform.position.y - (_switchSizeY/_pembagi),
             transform.position.z);
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -44,6 +47,11 @@ public class KustomVerticalSwitch : MonoBehaviour
     {
         if (transform.position != _switchDownPos)
         {
+            if (!soundplayed)
+            {
+                audioManager.PlaySFX(audioManager.button);
+                soundplayed = true;
+            }
             transform.position = Vector3.MoveTowards(transform.position,
                 _switchDownPos,
                 _switchSpeed * Time.deltaTime);
@@ -80,7 +88,7 @@ public class KustomVerticalSwitch : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player1") || collision.CompareTag("Player2"))
         {
             StartCoroutine(SwitchUpDelay(_switchDelay));
         }
@@ -90,5 +98,6 @@ public class KustomVerticalSwitch : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
         _isSwitchPressed = false;
+        soundplayed = false;
     }
 }
