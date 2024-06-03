@@ -19,11 +19,14 @@ public class AudioManager : MonoBehaviour
     public AudioClip finish;
     public AudioClip walk;
     public AudioClip win;
+    public AudioClip lompat;
+    public AudioClip mendarat;
+    public AudioClip mendarat2;
 
     private void Start()
     {
-        musicSource.clip = background;
-        musicSource.Play();
+        //musicSource.clip = background;
+        //musicSource.Play();
     }
 
     public void PlaySFX(AudioClip clip)
