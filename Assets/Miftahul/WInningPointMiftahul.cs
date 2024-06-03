@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class WinningPointMiftahul : MonoBehaviour
 {
@@ -88,6 +89,18 @@ public class WinningPointMiftahul : MonoBehaviour
         }
     }
 
+    public void Pass()
+    {
+        int currentLevel = SceneManager.GetActiveScene().buildIndex;
+
+        if (currentLevel >= PlayerPrefs.GetInt("UnlockedLevel"))
+        {
+            PlayerPrefs.SetInt("UnlockedLevel",  currentLevel + 1);
+        }
+
+        Debug.Log("LEVEL" + PlayerPrefs.GetInt("UnlockedLevel") + " UNLOCKED");
+    }
+
     IEnumerator PlayWinSFX()
     {
         yield return new WaitForSeconds(1);
@@ -97,6 +110,7 @@ public class WinningPointMiftahul : MonoBehaviour
     IEnumerator NextScene()
     {
         yield return new WaitForSeconds(4);
+        Pass();
         SceneController.instance.NextLevel();
     }
 }
