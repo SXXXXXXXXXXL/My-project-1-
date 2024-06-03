@@ -3,6 +3,12 @@ using UnityEngine;
 public class Key : MonoBehaviour
 {
     private GameManager gameManager;
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     private void Start()
     {
@@ -19,6 +25,7 @@ public class Key : MonoBehaviour
         {
             if (gameManager != null)
             {
+                audioManager.PlaySFX(audioManager.key);
                 gameManager.CollectKey();
                 Destroy(gameObject);
             }

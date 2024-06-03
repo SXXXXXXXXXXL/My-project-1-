@@ -18,7 +18,7 @@ public class PlayerControllerMiftahul : MonoBehaviour
     Animator animator;
     public AudioSource walkSound;
     bool soundplayed = false;
-
+    bool mendaratplayed = false;
     AudioManager audioManager;
 
     private void Awake()
@@ -61,6 +61,7 @@ public class PlayerControllerMiftahul : MonoBehaviour
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             isGrounded = false;
             animator.SetBool("isJumping", !isGrounded);
+            mendaratplayed = false;
         }
     }
 
@@ -96,6 +97,11 @@ public class PlayerControllerMiftahul : MonoBehaviour
         int numhits = rb.Cast(Vector2.down, hits, 0.1f);
         isGrounded = numhits > 0;
         animator.SetBool("isJumping", !isGrounded);
+        if(isGrounded && !mendaratplayed)
+        {
+            audioManager.PlaySFX(audioManager.mendarat);
+            mendaratplayed = true;
+        }
         soundplayed = false;
     }
 }
