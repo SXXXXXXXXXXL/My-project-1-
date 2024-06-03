@@ -99,7 +99,7 @@ public class PlayerControllerMiftahul : MonoBehaviour
         animator.SetBool("isJumping", !isGrounded);
         if(isGrounded && !mendaratplayed)
         {
-            audioManager.PlaySFX(audioManager.mendarat);
+            audioManager.PlaySFX(audioManager.mendarat2);
             mendaratplayed = true;
         }
         soundplayed = false;

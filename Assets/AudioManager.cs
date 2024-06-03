@@ -21,6 +21,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip win;
     public AudioClip lompat;
     public AudioClip mendarat;
+    public AudioClip mendarat2;
 
     private void Start()
     {

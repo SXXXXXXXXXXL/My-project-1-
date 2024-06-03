@@ -96,7 +96,7 @@ public class WinningPointMiftahul : MonoBehaviour
 
     IEnumerator NextScene()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(4);
         SceneController.instance.NextLevel();
     }
 }
