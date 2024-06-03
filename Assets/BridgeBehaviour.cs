@@ -10,6 +10,7 @@ public class BridgeBehaviour : MonoBehaviour
     float _platformSpeed = 10f;
     public float platformMovement = 0f;
     public AudioSource movingPlatform;
+    public AudioSource offSFX;
 
     // Start is called before the first frame update
     void Awake()
@@ -56,7 +57,11 @@ public class BridgeBehaviour : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position,
                 _platformOffPos,
                 _platformSpeed * Time.deltaTime);
-            movingPlatform.enabled = true;
+            offSFX.enabled = true;
+        }
+        else
+        {
+            offSFX.enabled = false; 
         }
     }
 

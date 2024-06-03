@@ -18,7 +18,7 @@ public class PlayerControllerMiftahul : MonoBehaviour
     Animator animator;
     public AudioSource walkSound;
     bool soundplayed = false;
-    bool mendaratplayed = false;
+    bool mendaratplayed = true;
     AudioManager audioManager;
 
     private void Awake()
