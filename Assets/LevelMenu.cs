@@ -30,8 +30,6 @@ public class LevelMenu : MonoBehaviour
 
     public void OpenLevel(int levelId)
     {
-        string levelName = "Level" + levelId + "Miftahul";  // Gunakan format nama yang sesuai
-        Debug.Log("Attempting to load scene: " + levelName);
-        SceneManager.LoadScene(levelName);
+        SceneManager.LoadScene(levelId);
     }
 }
