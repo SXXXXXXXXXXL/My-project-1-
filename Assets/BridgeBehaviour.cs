@@ -20,6 +20,7 @@ public class BridgeBehaviour : MonoBehaviour
             transform.position.y,
             transform.position.z);
         movingPlatform.enabled = false;
+        offSFX.enabled = false;
     }
 
     // Update is called once per frame

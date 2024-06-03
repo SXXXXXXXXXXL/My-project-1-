@@ -15,11 +15,13 @@ public class VerticalBridgeSwitch : MonoBehaviour
     float _switchDelay = 0.2f;
     bool _isSwitchPressed = false;
     public float pembagian = 1;
+    AudioManager audioManager;
+    bool soundPlayed = false;
 
     // Start is called before the first frame update
     void Awake()
     {
-
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         _switchSizeY = transform.localScale.y;
         _switchUpPos = transform.position;
         _switchDownPos = new Vector3(transform.position.x,
@@ -33,6 +35,11 @@ public class VerticalBridgeSwitch : MonoBehaviour
 
         if (_isSwitchPressed)
         {
+            if (!soundPlayed)
+            {
+                audioManager.PlaySFX(audioManager.button);
+                soundPlayed = true;
+            }
             SwitchDown();
         }
         else
@@ -81,7 +88,7 @@ public class VerticalBridgeSwitch : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player1") || collision.CompareTag("Player2"))
         {
             StartCoroutine(SwitchUpDelay(_switchDelay));
         }
@@ -91,5 +98,6 @@ public class VerticalBridgeSwitch : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
         _isSwitchPressed = false;
+        soundPlayed = false;
     }
 }

@@ -14,6 +14,8 @@ public class SwitchBehaviour : MonoBehaviour
     float _switchSpeed = 1f;
     float _switchDelay = 0.2f;
     bool _isSwitchPressed = false;
+    AudioManager audioManager;
+    bool soundPlayed = false;
 
     // Start is called before the first frame update
     void Awake()
@@ -21,8 +23,9 @@ public class SwitchBehaviour : MonoBehaviour
         _switchSizeY = transform.localScale.y;
         _switchUpPos = transform.position;
         _switchDownPos = new Vector3(transform.position.x,
-            transform.position.y - (_switchSizeY/2),
+            transform.position.y - (_switchSizeY/8),
             transform.position.z);
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -31,6 +34,11 @@ public class SwitchBehaviour : MonoBehaviour
 
         if (_isSwitchPressed)
         {
+            if (!soundPlayed)
+            {
+                audioManager.PlaySFX(audioManager.button);
+                soundPlayed = true;
+            }
             SwitchDown();
         }
         else if (!_isSwitchPressed)
@@ -79,7 +87,7 @@ public class SwitchBehaviour : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player1") || collision.CompareTag("Player2"))
         {
             StartCoroutine(SwitchUpDelay(_switchDelay));
         }
@@ -89,5 +97,6 @@ public class SwitchBehaviour : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
         _isSwitchPressed = false;
+        soundPlayed = false;
     }
 }

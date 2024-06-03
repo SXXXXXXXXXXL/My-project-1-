@@ -9,6 +9,8 @@ public class VerticalBridge : MonoBehaviour
     Vector3 _platformOnPos;
     float _platformSpeed = 10f;
     public float platformMovement = 0f;
+    public AudioSource onSFX;
+    public AudioSource offSFX;
 
     // Start is called before the first frame update
     void Awake()
@@ -17,6 +19,8 @@ public class VerticalBridge : MonoBehaviour
         _platformOnPos = new Vector3(transform.position.x,
             transform.position.y - platformMovement,
             transform.position.z);
+        onSFX.enabled = false;
+        offSFX.enabled = false;
     }
 
     // Update is called once per frame
@@ -36,9 +40,14 @@ public class VerticalBridge : MonoBehaviour
     {
         if (transform.position != _platformOnPos)
         {
+            onSFX.enabled = true;
             transform.position = Vector3.MoveTowards(transform.position,
                 _platformOnPos,
                 _platformSpeed * Time.deltaTime);
+        }
+        else
+        {
+            onSFX.enabled = false;
         }
     }
 
@@ -46,9 +55,14 @@ public class VerticalBridge : MonoBehaviour
     {
         if (transform.position != _platformOffPos)
         {
+            offSFX.enabled = true;
             transform.position = Vector3.MoveTowards(transform.position,
                 _platformOffPos,
                 _platformSpeed * Time.deltaTime);
+        }
+        else
+        {
+            offSFX.enabled = false;
         }
     }
 
