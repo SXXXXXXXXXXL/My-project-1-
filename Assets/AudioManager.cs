@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField] AudioSource musicSource;
-    [SerializeField] AudioSource SFXSource;
+    public static AudioManager Instance { get; private set; }
+
+    [SerializeField] private AudioSource musicSource;
+    [SerializeField] private AudioSource SFXSource;
 
     public AudioClip background;
     public AudioClip button;
@@ -23,21 +25,82 @@ public class AudioManager : MonoBehaviour
     public AudioClip mendarat;
     public AudioClip mendarat2;
 
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void Start()
     {
-        musicSource.clip = background;
-        musicSource.Play();
+        PlayMusic(background);
     }
 
     public void PlaySFX(AudioClip clip)
     {
-        SFXSource.PlayOneShot(clip);
+        if (!SFXSource.mute)
+        {
+            SFXSource.PlayOneShot(clip);
+        }
     }
 
     public void PlaySFXLoop(AudioClip clip)
     {
+        if (!SFXSource.mute)
+        {
+            SFXSource.clip = clip;
+            SFXSource.loop = true;
+            SFXSource.Play();
+        }
+    }
+
+    public void StopSFXLoop()
+    {
+        SFXSource.loop = false;
+        SFXSource.Stop();
+    }
+
+    public void PlayMusic(AudioClip clip)
+    {
         musicSource.clip = clip;
+        musicSource.loop = true;
         musicSource.Play();
     }
 
+    public void ToggleMusic()
+    {
+        musicSource.mute = !musicSource.mute;
+    }
+
+    public void ToggleSFX()
+    {
+        SFXSource.mute = !SFXSource.mute;
+    }
+
+    public void SetMusicVolume(float volume)
+    {
+        musicSource.volume = volume;
+    }
+
+    public void SetSFXVolume(float volume)
+    {
+        SFXSource.volume = volume;
+    }
+
+    public float GetMusicVolume()
+    {
+        return musicSource.volume;
+    }
+
+    public float GetSFXVolume()
+    {
+        return SFXSource.volume;
+    }
 }
