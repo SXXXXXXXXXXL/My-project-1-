@@ -113,4 +113,5 @@ public class WinningPointMiftahul : MonoBehaviour
         Pass();
         SceneController.instance.NextLevel();
     }
+
 }
