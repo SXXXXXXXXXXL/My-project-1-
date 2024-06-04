@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 2c3e790de4aab804cb62a754f5aed2de
   - enabled: 1
+    path: Assets/Miftahul/OpeningVideo.unity
+    guid: 1a119d582bce80443b8197f9bbce7b62
+  - enabled: 1
     path: Assets/Miftahul/Level1Miftahul.unity
     guid: 596efad638bf28f46b4e5a55c1996816
   - enabled: 1
@@ -17,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Miftahul/Level3Miftahul.unity
     guid: 87ede99313a0ce64889a3bd535f9f429
+  - enabled: 1
+    path: Assets/Miftahul/EndingVideo.unity
+    guid: 793765822739e224fa0b80671a807539
   m_configObjects: {}
