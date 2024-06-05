@@ -10,7 +10,7 @@ public class LevelMenu : MonoBehaviour
 
     private void Awake()
     {
-        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 0);
+        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
 
         // Pastikan semua tombol tidak dapat diklik
         for (int i = 0; i < buttons.Length; i++)
