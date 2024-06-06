@@ -10,6 +10,7 @@ public class WinningPointMiftahul : MonoBehaviour
     private bool player1Inside = false;
     private bool player2Inside = false;
     AudioManager audioManager;
+    public Animator transition;
 
     private void Awake()
     {
@@ -110,6 +111,8 @@ public class WinningPointMiftahul : MonoBehaviour
     IEnumerator NextScene()
     {
         yield return new WaitForSeconds(4);
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(1);
         Pass();
         SceneController.instance.NextLevel();
     }
