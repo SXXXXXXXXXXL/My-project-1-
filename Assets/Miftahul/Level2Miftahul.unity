@@ -1171,6 +1171,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseNTutorial2
       objectReference: {fileID: 0}
+    - target: {fileID: 2975252319548696001, guid: 2394ae69138697c438f40b5cc588f127, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975252319548696001, guid: 2394ae69138697c438f40b5cc588f127, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975252319548696001, guid: 2394ae69138697c438f40b5cc588f127, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1740585795}
+    - target: {fileID: 2975252319548696001, guid: 2394ae69138697c438f40b5cc588f127, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975252319548696001, guid: 2394ae69138697c438f40b5cc588f127, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlaySFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975252319548696001, guid: 2394ae69138697c438f40b5cc588f127, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975252319548696001, guid: 2394ae69138697c438f40b5cc588f127, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: 7a2d0b63c2a3b954580054a15cef9c20, type: 3}
+    - target: {fileID: 2975252319548696001, guid: 2394ae69138697c438f40b5cc588f127, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.AudioClip, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4380512453243775055, guid: 2394ae69138697c438f40b5cc588f127, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
