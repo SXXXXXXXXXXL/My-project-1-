@@ -5,11 +5,23 @@ public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
 
+    public static bool isPaused = false;
+
     // Pause the game and show the pause menu
     public void Pause()
     {
-        Time.timeScale = 0f; // Pause the game
-        pauseMenu.SetActive(true);
+        if (!isPaused)
+        {
+            Time.timeScale = 0f; // Pause the game
+            pauseMenu.SetActive(true);
+            isPaused = true;
+        }
+        else
+        {
+            Time.timeScale = 1f; // Pause the game
+            pauseMenu.SetActive(true);
+            isPaused = false;
+        }
     }
 
     // Return to the main menu
@@ -24,6 +36,7 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f; // Unpause the game
         pauseMenu.SetActive(false);
+        isPaused = false;
     }
 
     // Restart the current scene

@@ -34,34 +34,37 @@ public class PlayerControllerMiftahul : MonoBehaviour
 
     void Update()
     {
-        horizontal = Input.GetAxisRaw(horizontalControl); // Mendapat inputan utk movement
-        Vector2 velocity = rb.velocity;
-        velocity.x = horizontal * speed; // Set speed utk movement
-        rb.velocity = velocity;
-
-        FlipSprite();
-
-        groundCheck();
-
-        if (Math.Abs(Input.GetAxisRaw(horizontalControl)) > 0 && isGrounded)
+        if (!PauseMenu.isPaused)
         {
-            walkSound.enabled = true;
-        }
-        else
-        {
-            walkSound.enabled = false;
-        }
+            horizontal = Input.GetAxisRaw(horizontalControl); // Mendapat inputan utk movement
+            Vector2 velocity = rb.velocity;
+            velocity.x = horizontal * speed; // Set speed utk movement
+            rb.velocity = velocity;
 
-        if (isGrounded && Input.GetButtonDown(jumpControl)) // Program utk lompat
-        {
-            if (!soundplayed)
+            FlipSprite();
+
+            groundCheck();
+
+            if (Math.Abs(Input.GetAxisRaw(horizontalControl)) > 0 && isGrounded)
             {
-                audioManager.PlaySFX(audioManager.lompat);
+                walkSound.enabled = true;
             }
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            isGrounded = false;
-            animator.SetBool("isJumping", !isGrounded);
-            mendaratplayed = false;
+            else
+            {
+                walkSound.enabled = false;
+            }
+
+            if (isGrounded && Input.GetButtonDown(jumpControl)) // Program utk lompat
+            {
+                if (!soundplayed)
+                {
+                    audioManager.PlaySFX(audioManager.lompat);
+                }
+                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                isGrounded = false;
+                animator.SetBool("isJumping", !isGrounded);
+                mendaratplayed = false;
+            }
         }
     }
 

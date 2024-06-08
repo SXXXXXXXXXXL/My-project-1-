@@ -54301,6 +54301,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3900909831315648000, guid: 1c639471c78b3bc41bbeea2d54890ccd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1820
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900909831315648000, guid: 1c639471c78b3bc41bbeea2d54890ccd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 980
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900909831315648000, guid: 1c639471c78b3bc41bbeea2d54890ccd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900909831315648000, guid: 1c639471c78b3bc41bbeea2d54890ccd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6516174954582400720, guid: 1c639471c78b3bc41bbeea2d54890ccd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -54366,7 +54382,8 @@ PrefabInstance:
       value: UnityEngine.AudioClip, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4054998708159489315, guid: 1c639471c78b3bc41bbeea2d54890ccd, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c639471c78b3bc41bbeea2d54890ccd, type: 3}
