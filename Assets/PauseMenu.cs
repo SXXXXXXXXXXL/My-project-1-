@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
+    [SerializeField] GameObject tutorialMenu; // Referensi untuk menu tutorial
+    [SerializeField] GameObject tutorialButton; // Referensi untuk tombol tutorial
 
     public static bool isPaused = false;
 
@@ -12,6 +14,7 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 0f; // Pause the game
         pauseMenu.SetActive(true);
+        tutorialButton.SetActive(false); // Nonaktifkan tombol tutorial
         isPaused = true;
     }
 
@@ -20,6 +23,7 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f; // Unpause the game
         pauseMenu.SetActive(false);
+        tutorialButton.SetActive(true); // Aktifkan kembali tombol tutorial
         isPaused = false;
     }
 
@@ -38,5 +42,22 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         isPaused = false;
     }
-}
 
+    // Show the tutorial menu and pause the game
+    public void ShowTutorial()
+    {
+        Time.timeScale = 0f; // Pause the game
+        tutorialMenu.SetActive(true);
+        tutorialButton.SetActive(false); // Nonaktifkan tombol tutorial
+        isPaused = true;
+    }
+
+    // Hide the tutorial menu and resume the game
+    public void HideTutorial()
+    {
+        Time.timeScale = 1f; // Unpause the game
+        tutorialMenu.SetActive(false);
+        tutorialButton.SetActive(true); // Aktifkan kembali tombol tutorial
+        isPaused = false;
+    }
+}
